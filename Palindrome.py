@@ -1,9 +1,9 @@
 n=int(input())
-sum=0
 k=n
+sum=0
 while n!=0:
     x=n%10
-    sum = sum*10+x
+    sum =sum*10+x
     n //= 10
 if sum==k:
     print('True')
