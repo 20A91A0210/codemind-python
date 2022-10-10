@@ -1,16 +1,20 @@
+def dn(x):
+    y=x
+    l=[]
+    while x!=0:
+        r =x%10
+        l.append(r)
+        x //=10
+    l=len(l)
+    sum=0
+    while y!=0:
+        t= y%10
+        sum =sum + t**l
+        l -=1
+        y //=10
+    return sum
 n=int(input())
-m=n
-s=str(n)
-l=list(s)
-y=len(l)
-sum=0
-while n!=0:
-    r=n%10
-    z=y
-    sum =sum+r**z
-    n //=10
-    y -= 1
-if sum==m:
+if dn(n)==n:
     print('True')
 else:
     print('False')
