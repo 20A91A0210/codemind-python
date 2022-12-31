@@ -1,8 +1,7 @@
 n=int(input())
-for i in range(n):
-    for j in range(n):
-        if i==j:
-            print('0',end='')
-        else:
-            print('x',end='')
+x=65
+for row in range(n):
+    for col in range(n):
+        print(chr(x),end=' ')
+    x+= 1
     print()
