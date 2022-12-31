@@ -1,7 +1,5 @@
 n=int(input())
-x=65
-for row in range(n):
-    for col in range(n):
-        print(chr(x),end=' ')
-    x+= 1
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(j,end='')
     print()
